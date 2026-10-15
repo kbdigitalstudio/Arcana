@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #090909;
+  --color-coal: #101010;
+  --color-ivory: #e8e1d6;
+  --color-parchment: #f2ede3;
+  --color-gold: #b59a68;
+  --color-gold-soft: #d3bd8f;
+  --color-burgundy: #351a20;
+  --color-smoke: #77716b;
+
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --ease-arcana: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --background: #090909;
+  --foreground: #e8e1d6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #b59a68;
+  color: #090909;
+}
+
+/* Visible focus — accessible, on-brand */
+:focus-visible {
+  outline: 1.5px solid #b59a68;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Editorial display defaults */
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* Fine hairline used across sections */
+.hairline {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(181 154 104 / 0.45),
+    transparent
+  );
+  height: 1px;
+}
+
+/* Card paper texture (pure CSS, no images) */
+.card-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: radial-gradient(
+      rgb(255 255 255 / 0.05) 1px,
+      transparent 1px
+    );
+  background-size: 3px 3px;
+  mix-blend-mode: overlay;
+}
+
+.vignette::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 90% 70% at 50% 40%,
+    transparent 40%,
+    rgb(0 0 0 / 0.55) 100%
+  );
+}
+
+/* Slow cinematic drift for ambient shapes */
+@keyframes arcana-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.02);
+  }
+}
+
+.animate-drift {
+  animation: arcana-drift 14s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

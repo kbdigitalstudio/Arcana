@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800">
+  <rect width="500" height="800" fill="#141010"/>
+  <rect x="24" y="24" width="452" height="752" fill="none" stroke="#B59A68" stroke-width="2" opacity="0.7"/>
+  <rect x="40" y="40" width="420" height="720" fill="none" stroke="#B59A68" stroke-width="1" opacity="0.35"/>
+  <text x="250" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="44" letter-spacing="14" fill="#B59A68">XVIII</text>
+  <path d="M310 240 A150 150 0 1 0 310 520 A120 120 0 1 1 310 240 Z" fill="#B59A68" opacity="0.9"/>
+  <line x1="140" y1="620" x2="360" y2="620" stroke="#B59A68" stroke-width="2" opacity="0.8"/>
+  <circle cx="190" cy="620" r="8" fill="#B59A68"/>
+  <circle cx="310" cy="620" r="8" fill="#B59A68"/>
+  <text x="250" y="700" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="10" fill="#E8E1D6">LA LUNA</text>
+</svg>

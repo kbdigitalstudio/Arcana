@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.45" stop-color="#1c1216"/>
+      <stop offset="0.62" stop-color="#3a2b22"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0.38" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#E8E1D6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#E8E1D6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#light)"/>
+  <ellipse cx="400" cy="420" rx="136" ry="176" fill="#0b0b0c" opacity="0.92"/>
+  <path d="M400 600 C280 600 208 700 192 1000 L608 1000 C592 700 520 600 400 600 Z" fill="#0b0b0c" opacity="0.92"/>
+  <path d="M312 360 Q400 280 496 368" stroke="#B59A68" stroke-width="2" fill="none" opacity="0.5"/>
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#B59A68" stroke-width="2" opacity="0.35"/>
+  <text x="400" y="920" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="12" fill="#E8E1D6">LUNA ÁLVAREZ</text>
+</svg>
